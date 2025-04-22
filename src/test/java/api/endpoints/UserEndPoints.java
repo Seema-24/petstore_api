@@ -41,7 +41,7 @@ public class UserEndPoints {
 								.pathParam("username", username)
 								.body(payload)
 							.when()
-								.put(Routes.get_url);
+								.put(Routes.update_url);
 
 		return response;
 	}
@@ -51,7 +51,7 @@ public class UserEndPoints {
 		Response response = given()
 								.pathParam("username", username)
 							.when()
-								.delete(Routes.get_url);
+								.delete(Routes.delete_url);
 
 		return response;
 	}
